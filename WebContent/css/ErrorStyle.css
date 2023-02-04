@@ -1,0 +1,32 @@
+body{
+	margin: 50px;
+	text-align: center;
+	color:#4FBC6E;
+	font-family: monospace;
+	font-style: italic;
+	background-color:#222222;
+}
+
+.space{
+	margin:10%;
+}
+
+h1{
+	margin: 0% 20% 0%;
+
+}
+
+
+hr{
+	color: #777777;
+}
+
+.errorButton{
+	background-color: #1BD1A0;
+}
+
+table{
+	margin-left:45%;
+	margin-right:45%;
+	width: 10%;
+}

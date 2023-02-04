@@ -1,0 +1,317 @@
+body{
+	background-color:#222222;
+	color:#FFFFFF;
+}
+
+table th,tr,td{
+	border-color: #444444;
+}
+
+table{
+	border-color: #FFFFFF;
+	background-color:#111111;
+}
+
+a{color:#1BD1A0;}
+
+
+#headerMainDiv{
+	position: sticky;
+  	top: 0;
+ 	left: 0;
+ 	z-index: 2;
+}
+
+.cellFinalPrice{
+	color: #1BD1A0;
+	font-style: italic;
+}
+
+.showTableButton{
+	background-color:#1BD1A0;
+	border-color:#111111;
+}
+
+
+.sortButton{	
+	background-color:#1BD1A0;
+	border-color:#111111;
+	float:left;
+
+}
+
+.userInput{
+	background-color:#444444;
+	color:#FFFFFF;
+	width: 50%;
+}
+
+.dataFilterInput{
+	background-color:#444444;
+	color:#FFFFFF;
+	width: 16.32%;
+}
+
+.customImage{
+	float:left;
+	margin-right:2%;
+    margin-bottom:2%;
+	
+	
+}
+
+
+
+.showTableDetailsAllDiv{
+	
+	float:left;
+}
+
+
+div.showTableDetailsDiv{
+
+	float:left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+div.showTableDetailsDiv table td,th,tr{
+	text-align: center;
+	border: thin solid black;
+
+}
+
+.clearDiv{
+	clear: both;	
+}
+
+
+
+div.showTableDiv table td,th,tr{
+	text-align: center;
+	border: thin solid black;
+}
+
+.showProductTable{
+	margin:5px;
+	float:left;
+}
+
+
+
+div.footerDiv table tr td form button{
+	text-align: center;
+	border: thin solid black;
+	
+	border: none;
+	color: #000000;
+	font-weight:bold;
+	background-color:#4FBC6E;
+	
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 5px 5px;
+}
+
+.showProductOrderDiv{
+	float:none;
+	display:inline;
+	margin-left:100%;
+}
+
+div.footerDiv table {
+	border: medium solid black;
+	width:100%;
+	
+}
+
+div.footerDiv{
+	
+	width:100%;
+}
+
+#registerSubmitButton{
+
+	float:left;
+	margin-right:5px;
+	}
+	
+#dataFilterSubmitButton{
+	display:none;
+}
+
+.formSpan{
+	color:#4FBC6E; 
+	font-size:larger;
+}
+
+#chartDiv{
+	display:inline-block;
+	margin-right:60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (orientation: landscape) {
+
+	#headerMainDiv{
+		border: medium solid black;
+		width: 100%;
+		height: 20%;
+		
+	}
+	
+	
+	#headerLogo{
+		
+		display: block;
+		margin: 5px 5px;
+	
+	}
+	
+	
+	.headerBigBlankCell{
+		width:90%;
+	}
+	
+	.headerButton {
+	  border: none;
+	  color: #000000;
+	  font-weight:bold;
+	  background-color:#4FBC6E;
+	
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 5px 5px;
+	}
+	
+	#headerUserInfo
+	{
+	  font-size:large;
+	  border: none;
+	  color: #000000;
+	  font-weight:bold;
+	  background-color:#4FBC6E;
+	  padding: 13px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 15px 5px;
+	 
+	}
+	
+	@media screen and (max-width: 750px) {
+	#headerUserInfo{display:none;}
+	}
+	
+	
+}
+
+
+
+
+@media (orientation: portrait) {
+
+	img {width: 100%;}
+	
+	div.showTableDiv table {
+		width:100%;
+		overflow: scroll;
+	}
+	
+	#headerMainDiv{
+		border: medium solid black;
+		width: 100%;
+		height: 20%;
+	}
+	
+	
+
+	#headerLogo{
+		
+		display: block;
+		margin: 5px 5px;
+	
+	}
+	
+	
+	.headerBigBlankCell{
+		width:70%;
+	}
+	
+	.headerButton {
+	  border: none;
+	  color: #000000;
+	  font-weight:bold;
+	  background-color:#4FBC6E;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 5px 5px;
+	}
+	
+	#headerUserInfo
+	{
+	  font-size:large;
+	  border: none;
+	   color: #000000;
+	  font-weight:bold;
+	  background-color:#4FBC6E;
+	  padding: 15px 32px;
+	  text-align: center;
+	  display: inline-block;
+	  margin: 5px 5px;
+	}
+	
+	
+	.dataFilterInput{
+	background-color:#444444;
+	color:#FFFFFF;
+	width: 20%;
+	margin-bottom:10px;
+	margin-right:10px;
+	}
+	
+	div.showTableDiv form.numberFilter input{
+	width:20%;
+	}
+
+	@media screen and (max-width: 950px) {
+	#headerUserInfo{display:none;}
+	}
+	
+	@media screen and (max-width: 600px) {
+	#headerLogo{display:none;}
+	.headerButton{padding: 15px 40px;}
+	
+	}
+	
+	
+	
+}
+
+
+
