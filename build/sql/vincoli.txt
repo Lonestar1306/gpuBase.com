@@ -1,0 +1,37 @@
+	"scheda" contiene tutte le specifiche tecniche di una gpu di un certo modello
+	"custom" è un insieme di schede personalizzate vendute da aziende terze. la maggior parte delle caratteristiche sono 	
+	determinate dalla scheda usata come base per creare il prodotto personalizzato venduto da tali aziende.
+
+	Queste due entità sono pensate per essere mantenute nel tempo senza quasi mai eliminare informazioni.
+
+	una "custom" può essere messa in vendita da un amministratore ed inoltre, se e solo se è messa in vendita, 
+	può essere anche comprata da un cliente nel corso di una transazione.
+	ogni custom può avere un insieme di foto associate 
+
+	un amministratore è uno degli addetti al singolo negozio (proprietario del sito)
+	che può mettere in vendita delle gpu "custom", modificandone eventualmente prezzo, iva e pezzi disponibili.
+	
+	"vendita" contiene tutti gli articoli messi in vendita in un certo momento.
+	è possibile mettere in vendita una certa "custom" solo da parte di uno degli amministratori nello stesso momento;
+	quindi per ogni custom al più ci sarà una sola vendita da parte di un solo amministratore. (id custom è chiave primaria)
+	
+	una "custom" che non è più in vendita per fine produzione 
+	e per cui non sono pianificate ulteriori vendite future
+	viene elimitata da "vendita"
+
+	ma tutte le informazioni relative alla "custom" stessa rimangono permanentemente nel database
+	
+	ogni amministratore può aggiornare il prezzo, iva e numero pezzi; tuttavia l'amministratore
+	che ha eseguito l'ultima operazione di aggiunta/aggiornamento viene associato alla vendita
+	e ne è quidi responsabile (sopratutto se commette errori di prezzo ecc...)
+	
+	
+
+	un cliente è una persona registrata al sito che è abilitata per l'acquisto di articoli nel negozio
+	(nel nostro caso solo gpu "custom")
+	tutti gli acqisti possono avvenire solo se gli articoli interessati sono in vendita e sono 
+	disponibili (num. pezzi sufficiente per l'ordine richiesto)
+	
+	"ordinazione" è lo storico di ogni acquisto di ogni cliente e mantiene tutti i dati di vendita nel momento 	
+	in cui l'acquisto vienne ultimato, permettendo l'emissione di eventuali fatture
+ 
